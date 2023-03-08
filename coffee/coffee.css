@@ -1,0 +1,431 @@
+body{
+		background-color: black;
+	}
+	.navdrop{
+		display: flex;
+			justify-content:space-around; 
+		width: 100%;
+			font-size: 18px;}
+		.nav2{
+			margin-left: 30px;
+		}
+		.banner{
+			width: 100% ;
+			height: 100vh;
+	background: url("assets/Images/coffee banner1.jpg");
+			
+			background-size: 100% 100%;
+			display: flex;
+			
+			justify-content:flex-start;
+			align-items: center;
+			padding-right: 100px;
+			font-weight: 600;
+			color: white;
+		}
+		.navbar{
+			
+			background-color:  black!important;
+		}
+		.nav-link{
+			transition: 0.6s;
+		}
+		.nav-link:hover{
+
+			
+			background-color: rgba(90,53,27,1.00);
+			font-weight: 600;
+			color: white;
+			border-radius: 0px 30px 0px 30px;
+			
+		}
+		.button{
+			background-color: rgba(90,53,27,1.00);
+			font-weight: 600;
+			color: white;
+			transition: 0.5s;
+			margin-top: 20px;
+		}
+		.button:hover{
+			box-shadow: 4px 4px 5px 5px black;
+			transform: translatex(15px)
+		}
+	.info{
+			padding: 25px;
+			margin-top: 50px;
+			text-align: center;
+		}
+		.info h1{
+			transition: 1.5s;
+			font-family: "alex-brush";
+			font-style: italic;
+			font-size: 50px;
+			
+		}
+		.info h1:hover{
+			transform: translatex(15px)
+			
+		}
+		.info p{
+			transition: 1.6s;
+			text-align: center;
+		}
+		.info p:hover{
+			transform: translatex(15px);
+			font-size: 18px;
+			
+		}
+		.spn{
+			color:#8f6447;
+		}
+		.head{
+			text-align: center;
+			margin-top: 100px;
+		}
+	.about{
+		height: 400px; 
+		background-color: #121212;
+		padding: 20px;
+		color: white;
+	}
+	.about h3{
+		padding-bottom: 30px;
+	}
+	.h1us{
+		text-align: center;
+		color: white;
+		font-weight: 700;
+		margin-top: 60px;
+		font-family: "alex-brush";
+	}
+	
+	
+	.card{
+			position: relative;
+			height: 190px;
+			background: #333;
+			transition: 0.5s;
+			margin-top: 140px;
+		color: black;
+		padding: 0px 10px;
+		
+			
+			
+			
+		}
+		.card:hover{
+			height: 370px;
+			color: white;
+		
+		}
+		.card .lines{
+			position: absolute;
+			inset:0;
+			background: #000;
+			overflow: hidden;
+		}
+		.card .lines::before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 600px;
+			height: 120px;
+			background: linear-gradient(transparent,#8f6447,#8f6447,#8f6447,transparent);
+			animation: anim 4s linear infinite;
+		}
+		@keyframes anim{
+			0%{
+				transform:translate(-50%,-50%)rotate(0deg);
+			}
+			100%{
+				transform:translate(-50%, -50%)rotate(360deg);
+			}
+		}
+		
+		.card .lines::after{
+			content: '';
+			position: absolute;
+			inset:3px;
+			background: #292929;
+			
+			
+		}
+		.card .imgbx{
+			position: absolute;
+			top: -50px;
+			left: 50%;
+			transform: translate(-50%);
+			width: 240px;
+			height: 200px;
+			background: #000;
+			transition: 0.5s;
+			z-index: 10;
+			overflow: hidden;
+		}
+		.card:hover .imgbx{
+			width: 260px;
+			height: 250px;
+			
+			}
+		.card .imgbx::before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		    width: 500px;
+			height: 150px;
+			transform: translate(-50%,-50%);
+			background: linear-gradient(transparent,#fff,#fff,#fff,transparent);
+			animation: animate2 6s linear infinite;
+		}
+		@keyframes animate2{
+			0%{
+				transform:translate(-50%,-50%)rotate(360deg);
+			}
+			100%{
+				transform:translate(-50%, -50%)rotate(0deg);
+			}
+		}
+		.card .imgbx::after{
+			content: '';
+			position: absolute;
+			inset:3px;
+			background: #292929;
+		}
+		.card .imgbx img{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			z-index: 1;
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+		}
+		.card .content{
+			position: absolute;
+		   
+		
+			
+		
+		}
+		.card .content .details{
+			transition: 0.5s;
+			margin-top: 250px;
+			transform: translatey(-120px);
+			padding: 10px;
+			
+			opacity: 0;
+				
+		}
+		.card:hover .content .details{
+			padding-top: 100px;
+			opacity:1;
+			
+			
+			}
+	.signup{
+		background-image:linear-gradient(rgba(0,0,0,0.70),rgba(90,53,27,0.80)),url("assets/Images/signup.jpg");
+		background-size: 100% 100%;
+		height: 600px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 50px;
+		margin-top: 70px;
+	}
+	
+	
+	.box{
+		position: relative;
+		width: 380px;
+		height: 420px;
+		background: #1c1c1c;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	.a1{
+		margin-right: 100px;
+	}
+	.a2{
+		margin-right: 100px;
+	}
+	.box::before{
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 380px;
+		height: 420px;
+		background: linear-gradient(0deg,transparent,transparent,#8f6447,#8f6447,#8f6447);
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: ani 6s linear infinite;
+	}
+	.box::after{
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 380px;
+		height: 420px;
+		background: linear-gradient(0deg,transparent,transparent,#8f6447,#8f6447,#8f6447);
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: ani 6s linear infinite;
+		animation-delay: -3s
+	}
+	
+	@keyframes ani{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+	
+	.box form{
+		position: absolute;
+		inset:4px;
+		background: #222;
+		padding:50px 40px;
+		border-radius: 8px;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+	}
+	.box form h2{
+		color: #fff;
+		font-weight: 500px;
+		letter-spacing: 0.1;
+	}
+	
+	.box form .inputbox{
+		position: relative;
+		width: 300px;
+		margin-top: 35px;
+	}
+	
+	.box form .inputbox input{
+		position: relative;
+		width: 100%;
+		padding: 20px 10px 10px;
+		background: transparent;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		color: #23242a;
+		font-size: 1em;
+		letter-spacing: 0.05s;
+		transition: 0.5s;
+		z-index: 10;
+	}
+	
+	.box form .inputbox span{
+		position: absolute;
+		left: 0;
+		padding: 20px 10px 10px;
+		pointer-events: none;
+		color: #8f8f8f;
+		font-size: 1em;
+		letter-spacing: 0.05;
+		transition: 0.5s;
+	}
+	
+	.box form .inputbox input:valid ~ span,
+	.box form .inputbox input:focus ~ span
+	{
+		color: #fff;
+		font-size: 0.75em;
+		transform: translateY(-34px);
+		
+	}
+	
+	.box form .inputbox i{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		border-radius: 4px;
+		overflow: hidden;
+		transition: 0.5s;
+		pointer-events: none;
+		
+	}
+	
+	.box form .inputbox input:valid ~ i,
+	.box form .inputbox input:focus ~ i{
+		height: 44px;
+	}
+	.box form .links{
+		display: flex;
+		justify-content: center;
+		width: 100%
+	}
+	
+	
+	.box form .links a{
+		margin: 10px 40px;
+		font-size: 0.75em;
+		color: #8f8f8f;
+		text-decoration: none;
+		
+	}
+	
+	.box form .links a:hover,
+	.box form .links a:nth-child(2){
+		color: #fff;
+		
+	}
+	.box form input[type="submit"]{
+		border: none;
+		padding: 9px 25px;
+		background: #8f6447;
+		cursor: pointer;
+		font-size: 0.9em;
+		border-radius: 4px;
+		font-weight: 600;
+		width: 100px;
+		margin-top: 10px;
+		
+	}
+	.borderline{
+		position: absolute;
+		top: 0;
+		inset:0;
+	}
+	.borderline::before{
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 380px;
+		height: 420px;
+		background: linear-gradient(0deg,transparent,transparent,#fff,#fff,#fff);
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: ani 6s linear infinite;
+		animation-delay: -1.5s
+	}
+	.borderline::after{
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 380px;
+		height: 420px;
+		background: linear-gradient(0deg,transparent,transparent,#fff,#fff,#fff);
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: ani 6s linear infinite;
+		animation-delay: -4.5s
+	}
+	
+	.box form input[type="submit"]:active{
+		opacity: 0.8;
+	}
+		
+	
